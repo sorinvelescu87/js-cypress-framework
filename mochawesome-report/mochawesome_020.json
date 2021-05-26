@@ -1,0 +1,123 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-26T15:35:58.807Z",
+    "end": "2021-05-26T15:36:01.477Z",
+    "duration": 2670,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4ebd28fd-ebd2-42e3-8e22-86ed1da68de6",
+      "title": "",
+      "fullFile": "cypress\\integration\\herokuapp\\infinite-scroll.spec.js",
+      "file": "cypress\\integration\\herokuapp\\infinite-scroll.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f3d06ef5-df7e-4dc0-936f-5b7a5e8fccd3",
+          "title": "Infinite Scroll",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should have the correct tagline",
+              "fullTitle": "Infinite Scroll should have the correct tagline",
+              "timedOut": null,
+              "duration": 1469,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "utils.assertTagLine(data.infinite_scroll.tagLine);",
+              "err": {},
+              "uuid": "eb4b3d56-1516-4a77-9d9f-abff89345d1a",
+              "parentUUID": "f3d06ef5-df7e-4dc0-936f-5b7a5e8fccd3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should scroll to footer",
+              "fullTitle": "Infinite Scroll should scroll to footer",
+              "timedOut": null,
+              "duration": 1170,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "infinite_scroll.assertNoChildrenToBeEqualTo(2);\ncy.scrollTo(0, 1000);\ninfinite_scroll.assertNoChildrenToBeEqualTo(3);\ncy.wait(500);\ncy.scrollTo(0, 2000);\ninfinite_scroll.assertNoChildrenToBeEqualTo(4);",
+              "err": {},
+              "uuid": "7b98c383-fc00-4e60-8eae-f899f94c9621",
+              "parentUUID": "f3d06ef5-df7e-4dc0-936f-5b7a5e8fccd3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "eb4b3d56-1516-4a77-9d9f-abff89345d1a",
+            "7b98c383-fc00-4e60-8eae-f899f94c9621"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2639,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-05-26T15:35:49.441Z",
+    "end": "2021-05-26T15:35:55.410Z",
+    "duration": 5969,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8ae3d8a1-21ca-4483-971f-5075ffbfe843",
+      "title": "",
+      "fullFile": "cypress\\integration\\herokuapp\\hover.spec.js",
+      "file": "cypress\\integration\\herokuapp\\hover.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9cbab8cf-dedf-4cc1-a426-a0543540c423",
+          "title": "Hovers",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should have the correct tagline",
+              "fullTitle": "Hovers should have the correct tagline",
+              "timedOut": null,
+              "duration": 1235,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "utils.assertTagLine(data.hovers.tagLine);",
+              "err": {},
+              "uuid": "ada3d409-4f1a-4338-ad5d-83c36960f504",
+              "parentUUID": "9cbab8cf-dedf-4cc1-a426-a0543540c423",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should display caption on hover",
+              "fullTitle": "Hovers should display caption on hover",
+              "timedOut": null,
+              "duration": 4673,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "hover.captionIsNotVisible(1);\nhover.hoverImage(1);\nhover.captionIsVisible(1);",
+              "err": {
+                "message": "AssertionError: Timed out retrying: expected '<h5>' to be 'visible'\n\nThis element `<h5>` is not visible because its parent `<div.figcaption>` has CSS property: `display: none`",
+                "estack": "AssertionError: Timed out retrying: expected '<h5>' to be 'visible'\n\nThis element `<h5>` is not visible because its parent `<div.figcaption>` has CSS property: `display: none`\n    at Hover.captionIsVisible (http://the-internet.herokuapp.com/__cypress/tests?p=cypress\\integration\\herokuapp\\hover.spec.js:333:37)\n    at Context.eval (http://the-internet.herokuapp.com/__cypress/tests?p=cypress\\integration\\herokuapp\\hover.spec.js:284:11)",
+                "diff": null
+              },
+              "uuid": "85589d84-8f88-4c63-b958-9b08a37e3774",
+              "parentUUID": "9cbab8cf-dedf-4cc1-a426-a0543540c423",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ada3d409-4f1a-4338-ad5d-83c36960f504"
+          ],
+          "failures": [
+            "85589d84-8f88-4c63-b958-9b08a37e3774"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5908,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

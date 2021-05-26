@@ -1,0 +1,142 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-26T15:35:00.963Z",
+    "end": "2021-05-26T15:35:06.823Z",
+    "duration": 5860,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f9034c8e-f18c-49a9-8eb9-c0a24e81ad37",
+      "title": "",
+      "fullFile": "cypress\\integration\\herokuapp\\file-download.spec.js",
+      "file": "cypress\\integration\\herokuapp\\file-download.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "132f4a04-737c-49e4-b4b2-b08cd8b69031",
+          "title": "File Downloader",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should have the correct tagline",
+              "fullTitle": "File Downloader should have the correct tagline",
+              "timedOut": null,
+              "duration": 3625,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "utils.assertTagLine(data.file_download.tagLine);",
+              "err": {},
+              "uuid": "a52ff7c1-d12f-471f-a795-601f1a04d942",
+              "parentUUID": "132f4a04-737c-49e4-b4b2-b08cd8b69031",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should download hello_world.txt file",
+              "fullTitle": "File Downloader should download hello_world.txt file",
+              "timedOut": null,
+              "duration": 435,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "fileDownload.downloadFile('hello_world.txt');\nfileDownload.readTxtFile('hello_world.txt', data.file_download.fileTxt);",
+              "err": {},
+              "uuid": "8753348a-511c-401a-a241-0415761b6c41",
+              "parentUUID": "132f4a04-737c-49e4-b4b2-b08cd8b69031",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should verify response headers",
+              "fullTitle": "File Downloader should verify response headers",
+              "timedOut": null,
+              "duration": 1749,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "fileDownload.checkHeaders('sample.png');\nfileDownload.checkHeaders('hello_world.txt');\nfileDownload.checkHeaders('test-data.json');\nfileDownload.checkHeaders('some-file.txt');",
+              "err": {},
+              "uuid": "8a66bd8e-3e64-4764-9a0b-e0fa18bc53f9",
+              "parentUUID": "132f4a04-737c-49e4-b4b2-b08cd8b69031",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a52ff7c1-d12f-471f-a795-601f1a04d942",
+            "8753348a-511c-401a-a241-0415761b6c41",
+            "8a66bd8e-3e64-4764-9a0b-e0fa18bc53f9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5809,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

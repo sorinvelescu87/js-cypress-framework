@@ -1,0 +1,123 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-26T15:33:51.607Z",
+    "end": "2021-05-26T15:33:53.028Z",
+    "duration": 1421,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "dc2418e9-3e83-4966-ae3d-f76125f60c23",
+      "title": "",
+      "fullFile": "cypress\\integration\\herokuapp\\disappearing-elements.spec.js",
+      "file": "cypress\\integration\\herokuapp\\disappearing-elements.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0e6d1bf3-3770-466c-83ef-1dac14d253a2",
+          "title": "Disappearing Elements",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should have the correct tagline",
+              "fullTitle": "Disappearing Elements should have the correct tagline",
+              "timedOut": null,
+              "duration": 1141,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "utils.assertTagLine(data.disappearing_elements.tagLine);",
+              "err": {},
+              "uuid": "57ff2ac4-b41d-422f-b32c-63b5faf786e8",
+              "parentUUID": "0e6d1bf3-3770-466c-83ef-1dac14d253a2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should correctly assert the last item",
+              "fullTitle": "Disappearing Elements should correctly assert the last item",
+              "timedOut": null,
+              "duration": 248,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "disElem.assertLastElement();",
+              "err": {},
+              "uuid": "ba918a22-4f95-4e14-909d-24bbce03511a",
+              "parentUUID": "0e6d1bf3-3770-466c-83ef-1dac14d253a2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "57ff2ac4-b41d-422f-b32c-63b5faf786e8",
+            "ba918a22-4f95-4e14-909d-24bbce03511a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1389,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

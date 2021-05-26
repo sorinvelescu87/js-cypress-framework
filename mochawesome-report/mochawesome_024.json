@@ -1,0 +1,123 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-26T15:36:17.046Z",
+    "end": "2021-05-26T15:36:19.241Z",
+    "duration": 2195,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "777203b1-5a4e-478c-b443-77b034ae6e5c",
+      "title": "",
+      "fullFile": "cypress\\integration\\herokuapp\\key-presses.spec.js",
+      "file": "cypress\\integration\\herokuapp\\key-presses.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b500a3ba-53c8-4050-a15d-0425297150e8",
+          "title": "Key Presses",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should have the correct tagline",
+              "fullTitle": "Key Presses should have the correct tagline",
+              "timedOut": null,
+              "duration": 1393,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "utils.assertTagLine(data.key_presses.tagLine);",
+              "err": {},
+              "uuid": "204f4e21-49b0-4061-8891-ca40b34a0691",
+              "parentUUID": "b500a3ba-53c8-4050-a15d-0425297150e8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should assert the last key pressed",
+              "fullTitle": "Key Presses should assert the last key pressed",
+              "timedOut": null,
+              "duration": 771,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "utils.type('A', keyPresses.getInput());\nkeyPresses.getResult().should('have.text', 'You entered: A');\nutils.type('{rightarrow}', keyPresses.getInput());\nkeyPresses.getResult().should('have.text', 'You entered: RIGHT');\nutils.type('{shift}', keyPresses.getInput());\nkeyPresses.getResult().should('have.text', 'You entered: SHIFT');\nutils.type('7', keyPresses.getInput());\nkeyPresses.getResult().should('have.text', 'You entered: 7');\nutils.type('abcgs', keyPresses.getInput());\nkeyPresses.getResult().should('have.text', 'You entered: S');",
+              "err": {},
+              "uuid": "29e927e3-a693-4e35-945b-e39ec56b13db",
+              "parentUUID": "b500a3ba-53c8-4050-a15d-0425297150e8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "204f4e21-49b0-4061-8891-ca40b34a0691",
+            "29e927e3-a693-4e35-945b-e39ec56b13db"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2164,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

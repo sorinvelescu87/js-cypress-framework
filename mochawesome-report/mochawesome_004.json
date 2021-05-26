@@ -1,0 +1,123 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-26T15:33:46.626Z",
+    "end": "2021-05-26T15:33:49.089Z",
+    "duration": 2463,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e3d02531-306e-43d5-b00b-d8a3798947c8",
+      "title": "",
+      "fullFile": "cypress\\integration\\herokuapp\\context-menu.spec.js",
+      "file": "cypress\\integration\\herokuapp\\context-menu.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0047b564-009b-4b42-bd56-e1adb89ccb8e",
+          "title": "Context Menu",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should have the correct tagline",
+              "fullTitle": "Context Menu should have the correct tagline",
+              "timedOut": null,
+              "duration": 2065,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "utils.assertTagLine(data.context_menu.tagLine);",
+              "err": {},
+              "uuid": "3b1141cb-fada-4394-94ea-5db8aaf4810b",
+              "parentUUID": "0047b564-009b-4b42-bd56-e1adb89ccb8e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "rightclicks the hotspot",
+              "fullTitle": "Context Menu rightclicks the hotspot",
+              "timedOut": null,
+              "duration": 372,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "utils.rightClickOn(cm.getHotSpot());\nutils.expectAlertToContain(data.context_menu.alertText);",
+              "err": {},
+              "uuid": "e4479848-ee84-4666-82fc-cb518a3f757a",
+              "parentUUID": "0047b564-009b-4b42-bd56-e1adb89ccb8e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3b1141cb-fada-4394-94ea-5db8aaf4810b",
+            "e4479848-ee84-4666-82fc-cb518a3f757a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2437,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

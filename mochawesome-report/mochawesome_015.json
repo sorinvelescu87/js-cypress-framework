@@ -1,0 +1,147 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-05-26T15:35:19.298Z",
+    "end": "2021-05-26T15:35:27.117Z",
+    "duration": 7819,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3687f9ba-eea0-43ab-8063-c66e9a1224fd",
+      "title": "",
+      "fullFile": "cypress\\integration\\herokuapp\\forgot-password.spec.js",
+      "file": "cypress\\integration\\herokuapp\\forgot-password.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0757fd63-956f-47a7-929e-d3d23b9caa5c",
+          "title": "Forgot Password",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should have the correct tagline",
+              "fullTitle": "Forgot Password should have the correct tagline",
+              "timedOut": null,
+              "duration": 1974,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "utils.assertTagLine(data.forgot_password.tagLine);",
+              "err": {},
+              "uuid": "a8274504-12e9-4443-8f00-f9565824c1c8",
+              "parentUUID": "0757fd63-956f-47a7-929e-d3d23b9caa5c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should submit with empty input",
+              "fullTitle": "Forgot Password should submit with empty input",
+              "timedOut": null,
+              "duration": 488,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "forgotPass.emptySubmission();",
+              "err": {},
+              "uuid": "4b547975-1574-4f6a-a022-3d2f42f9c5a7",
+              "parentUUID": "0757fd63-956f-47a7-929e-d3d23b9caa5c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should submit with good input",
+              "fullTitle": "Forgot Password should submit with good input",
+              "timedOut": null,
+              "duration": 5289,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "forgotPass.goodSubmission();",
+              "err": {
+                "message": "AssertionError: Timed out retrying: expected 'http://the-internet.herokuapp.com/forgot_password' to include 'email_sent'",
+                "estack": "AssertionError: Timed out retrying: expected 'http://the-internet.herokuapp.com/forgot_password' to include 'email_sent'\n    at ForgotPassword.goodSubmission (http://the-internet.herokuapp.com/__cypress/tests?p=cypress\\integration\\herokuapp\\forgot-password.spec.js:342:16)\n    at Context.eval (http://the-internet.herokuapp.com/__cypress/tests?p=cypress\\integration\\herokuapp\\forgot-password.spec.js:285:16)",
+                "diff": null
+              },
+              "uuid": "96f7f837-4db2-4e75-8e5b-0935d1da0021",
+              "parentUUID": "0757fd63-956f-47a7-929e-d3d23b9caa5c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a8274504-12e9-4443-8f00-f9565824c1c8",
+            "4b547975-1574-4f6a-a022-3d2f42f9c5a7"
+          ],
+          "failures": [
+            "96f7f837-4db2-4e75-8e5b-0935d1da0021"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 7751,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

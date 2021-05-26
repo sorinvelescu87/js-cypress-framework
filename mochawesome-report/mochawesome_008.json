@@ -1,0 +1,161 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-26T15:34:03.845Z",
+    "end": "2021-05-26T15:34:07.799Z",
+    "duration": 3954,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8e7b852f-2a76-43c6-aec8-13b0b15f645c",
+      "title": "",
+      "fullFile": "cypress\\integration\\herokuapp\\dynamic-content.spec.js",
+      "file": "cypress\\integration\\herokuapp\\dynamic-content.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2e6f0ff5-814e-49df-b62c-bed60fb75c3b",
+          "title": "Dynamic Content",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should have the correct tagline",
+              "fullTitle": "Dynamic Content should have the correct tagline",
+              "timedOut": null,
+              "duration": 1339,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "utils.assertTagLine(data.dynamic_content.tagLine);",
+              "err": {},
+              "uuid": "232a8ef8-5307-40ae-b514-445cc7662cf6",
+              "parentUUID": "2e6f0ff5-814e-49df-b62c-bed60fb75c3b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should update text on refresh",
+              "fullTitle": "Dynamic Content should update text on refresh",
+              "timedOut": null,
+              "duration": 1317,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dynamic.assertParagraphNumberTextHasChanged(1);\ndynamic.assertParagraphNumberTextHasChanged(2);\ndynamic.assertParagraphNumberTextHasChanged(3);",
+              "err": {},
+              "uuid": "ac5f8d52-c7b7-4709-8d21-4f75211bc4ab",
+              "parentUUID": "2e6f0ff5-814e-49df-b62c-bed60fb75c3b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should keep the static text",
+              "fullTitle": "Dynamic Content should keep the static text",
+              "timedOut": null,
+              "duration": 956,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "utils.goToPage(data.dynamic_content.path + '?with_content=static');\ndynamic.assertParagraphNumberTextHasChanged(3);\ndynamic.assertParagraphNumberTextIsTheSame(1);",
+              "err": {},
+              "uuid": "4df47f6c-fc4e-48bd-a0f7-5290eee64938",
+              "parentUUID": "2e6f0ff5-814e-49df-b62c-bed60fb75c3b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should check images have source and it is correct",
+              "fullTitle": "Dynamic Content should check images have source and it is correct",
+              "timedOut": null,
+              "duration": 286,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dynamic.assertImageSource();",
+              "err": {},
+              "uuid": "c8e8b82e-2463-4f7a-8b07-750c7ade3f5e",
+              "parentUUID": "2e6f0ff5-814e-49df-b62c-bed60fb75c3b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "232a8ef8-5307-40ae-b514-445cc7662cf6",
+            "ac5f8d52-c7b7-4709-8d21-4f75211bc4ab",
+            "4df47f6c-fc4e-48bd-a0f7-5290eee64938",
+            "c8e8b82e-2463-4f7a-8b07-750c7ade3f5e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3898,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
