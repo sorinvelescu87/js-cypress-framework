@@ -1,0 +1,14 @@
+/// <reference types="cypress" />
+import  { Utils } from '../../support/utils';
+import * as data from '../../fixtures/test-data.json';
+const utils = new Utils();
+
+describe(data.X.tagLine, () => {
+    beforeEach(() => {
+        utils.goToPage(data.X.path);
+    });
+
+    it('should have the correct tagline', () => {
+        utils.assertTagLine(data.X.tagLine)
+    });
+});

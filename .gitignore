@@ -1,0 +1,9 @@
+node_modules
+downloads
+mochawesome-report
+test_reports
+cypress-combined-report.json
+debug.log
+package-lock.json
+cypress/screenshots
+cypress/videos
