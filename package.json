@@ -11,7 +11,7 @@
     "merge:reports": "mochawesome-merge mochawesome-report/*.json > cypress-combined-report.json",
     "create:html:report": "npm run merge:reports && marge --reportDir test_reports cypress-combined-report.json"
   },
-  "author": "",
+  "author": "Sorin Velescu",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^6.0.1",
